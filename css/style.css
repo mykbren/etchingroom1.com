@@ -286,5 +286,25 @@ a.social {
   .gallery-wrapper {
     column-count: 1;
   }
+
+  .nav {
+    height: auto;
+  }
+  .nav .logo,
+  .nav .links {
+    display: block;
+    margin: 0 auto;
+    float: none;
+    text-align: center;
+  }
+
+  .background-wrapper {
+    overflow: hidden;
+  }
+
+  .intro {
+    font-size: 12px !important;
+    bottom: 60px !important;
+  }
 }
 

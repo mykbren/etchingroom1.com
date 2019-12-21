@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500");
+
+/* TODO: Cleanup with CSS Linter */
+
 .cv-wrapper {
   display: inline-block;
   width: 100%
@@ -7,184 +10,101 @@
 .cv-wrapper .cv {
   text-align: center;
   border-top: 1px solid #f2f2f2;
-  padding: 30px 0
+  padding: 30px 0 0 0;
 }
 
 .cv-wrapper .cv h2 {
   text-transform: uppercase;
   font-weight: 400;
-  color: #555
+  color: #555;
 }
 
 .cv-wrapper .cv p {
   padding: 5px 0;
   color: #555;
-  font-size: 18px
+  font-size: 18px;
 }
 
 .wrapper {
   max-width: 1280px;
-  margin: 0 auto
+  margin: 0 auto;
 }
 
-.wrapper .logo {
+.gallery-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  column-count: 4;
+  column-gap: 10px;
+  line-height: 0;
+}
+
+.gallery-wrapper a {
+  width: 100%;
   display: inline-block;
-  height: 20%;
-  width: 100%
+  padding: 5px 0;
+}
+.gallery-wrapper a img {
+  width: 100%;
 }
 
-.wrapper .logo img {
-  width: 100%
+.nav .logo {
+  display: inline-block;
+  width: 180px;
+  padding-top: 3px;
 }
 
-.wrapper .menu {
-  position: relative;
-  line-height: 0
+.nav .logo img {
+  width: 100%;
 }
 
-.wrapper .menu .overlay {
+.wrapper .background-wrapper {
+  position: absolute;
+  line-height: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper .background-wrapper .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
   left: 0;
   right: 0;
-  top: 0;
   bottom: 0;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.5)
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.wrapper .menu video {
+.wrapper .background-wrapper video {
+  height: 100vh;
   width: 100%;
-  max-height: 100%
+  margin-top: -60px;
+  object-fit: cover;
 }
 
-.wrapper .menu a {
-  color: #fff;
-  display: inline-block;
-  text-decoration: none;
-  font-size: 36px;
-  line-height: 36px;
-  letter-spacing: 4px;
-  margin: 20px 0;
-  border-bottom: 2px solid transparent;
-  -webkit-transition: all 0.6s linear !important;
-  -moz-transition: all 0.6s linear !important;
-  -ms-transition: all 0.6s linear !important;
-  -o-transition: all 0.6s linear !important;
-  transition: all 0.6s linear !important
-}
-
-.wrapper .menu a:hover,
-.wrapper .menu a:focus,
-.wrapper .menu a:active {
-  color: #fff;
-  text-decoration: none;
-  border-bottom: 2px solid #fff;
-  -webkit-transition: all 0.6s linear !important;
-  -moz-transition: all 0.6s linear !important;
-  -ms-transition: all 0.6s linear !important;
-  -o-transition: all 0.6s linear !important;
-  transition: all 0.6s linear !important
-}
-
-.wrapper .menu .left-side {
-  position: absolute;
-  left: 60px;
-  bottom: 60px;
-  z-index: 2
-}
-
-.wrapper .menu .right-side {
-  position: absolute;
-  right: 60px;
-  bottom: 60px;
-  z-index: 2
-}
 
 .wrapper .intro {
-  max-width: 80%;
-  margin: 60px auto;
-  font-size: 18px;
-  line-height: 36px;
-  letter-spacing: 1px
-}
-
-.mobile-nav {
-  display: none
-}
-
-@media screen and (max-width: 600px) {
-  .footer {
-  margin: 30px 0 !important
-  }
-  .left-side {
-  display: none
-  }
-  .nav {
-  height: auto !important
-  }
-  .nav a.logo {
-  width: 100% !important;
-  margin: 0 auto !important
-  }
-  .nav .links {
-  width: 100%;
-  display: inline-block;
-  padding: 6px 0px;
-  float: none;
-  margin: 0 !important;
-  text-align: center
-  }
-  .nav .links a {
-  margin: 0 10px !important;
-  font-weight: 600
-  }
-  .cv {
-  padding: 30px 20px !important
-  }
-  .project {
-  width: 100% !important
-  }
-  .mobile-nav {
-  display: block;
-  padding: 20px 0;
-  text-align: center
-  }
-  .mobile-nav .links {
-  display: inline-block;
-  padding: 6px 0px
-  }
-  .mobile-nav .links a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: #555;
-  font-size: 18px;
+  max-width: 100%;
+  font-size: 16px;
+  line-height: 26px;
   letter-spacing: 1px;
-  font-weight: 600;
-  border-bottom: 2px solid transparent;
-  -webkit-transition: all 0.6s linear !important;
-  -moz-transition: all 0.6s linear !important;
-  -ms-transition: all 0.6s linear !important;
-  -o-transition: all 0.6s linear !important;
-  transition: all 0.6s linear !important
-  }
-  .mobile-nav .links a.active {
-  border-bottom: 2px solid #555
-  }
-  .mobile-nav .links a:hover {
-  border-bottom: 2px solid #555;
-  -webkit-transition: all 0.6s linear !important;
-  -moz-transition: all 0.6s linear !important;
-  -ms-transition: all 0.6s linear !important;
-  -o-transition: all 0.6s linear !important;
-  transition: all 0.6s linear !important
-  }
+  z-index: 2;
+  padding: 0 30px;
+  position: absolute;
+  bottom: 20px;
+  color: #fff;
+}
+
+.wrapper .intro p {
+  margin: 0 0 20px 0;
+  text-align: justify;
 }
 
 .projects-wrapper {
   display: inline-block;
-  width: 100%
+  width: 100%;
+  min-height: 100%;
+  height: auto;
 }
 
 .projects-wrapper .project {
@@ -194,7 +114,7 @@
   height: 400px;
   float: left;
   box-sizing: border-box;
-  padding: 20px
+  padding: 20px;
 }
 
 .projects-wrapper .project img {
@@ -205,7 +125,7 @@
   left: 20px;
   right: 20px;
   bottom: 20px;
-  object-fit: cover
+  object-fit: cover;
 }
 
 .projects-wrapper .project h2 {
@@ -220,12 +140,12 @@
   color: #fff;
   left: 20px;
   padding: 15px 20px;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 .single-project-wrapper {
   display: inline-block;
-  width: 100%
+  width: 100%;
 }
 
 .single-project-wrapper .project {
@@ -236,7 +156,7 @@
   float: left;
   box-sizing: border-box;
   padding: 20px;
-  margin-bottom: 60px
+  margin-bottom: 60px;
 }
 
 .single-project-wrapper .project img {
@@ -247,7 +167,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  object-fit: cover
+  object-fit: cover;
 }
 
 .single-project-wrapper .description {
@@ -256,35 +176,18 @@
   font-size: 18px;
   line-height: 36px;
   letter-spacing: 1px;
-  color: #555
-}
-
-.single-project-wrapper .description h2 {
-  text-transform: uppercase;
-  font-weight: 400;
-  color: #555
-}
-
-.single-project-wrapper .gallery img {
-  width: 100%;
-  margin: 20px 0
+  color: #555;
 }
 
 * {
-  font-family: Roboto, sans-serif
+  font-family: Roboto, sans-serif;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%
-}
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both
+  height: 100%;
 }
 
 .nav {
@@ -295,7 +198,11 @@ body {
   width: 100%;
   box-sizing: border-box;
   margin: 0 auto;
-  max-width: 1280px
+  max-width: 1280px;
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .nav a.logo {
@@ -303,79 +210,81 @@ body {
   float: left;
   width: 180px;
   margin: 0 20px;
-  padding: 5px 0 0 0
+  padding: 5px 0 0 0;
 }
 
 .nav a.logo img {
-  width: 100%
+  width: 100%;
 }
 
 .nav .links {
   display: inline-block;
   float: right;
-  margin-right: 30px;
-  padding: 6px 0px
 }
 
 .nav .links a {
   text-decoration: none;
-  color: #555;
+  color: #000;
   font-size: 18px;
   letter-spacing: 1px;
   margin-left: 15px;
-  border-bottom: 2px solid transparent;
-  -webkit-transition: all 0.6s linear !important;
-  -moz-transition: all 0.6s linear !important;
-  -ms-transition: all 0.6s linear !important;
-  -o-transition: all 0.6s linear !important;
-  transition: all 0.6s linear !important
+  text-transform: capitalize;
 }
 
-.nav .links a.active {
-  border-bottom: 2px solid #555
+.left {
+  display: inline-block;
+  float: left;
 }
 
-.nav .links a:hover {
-  border-bottom: 2px solid #555;
-  -webkit-transition: all 0.6s linear !important;
-  -moz-transition: all 0.6s linear !important;
-  -ms-transition: all 0.6s linear !important;
-  -o-transition: all 0.6s linear !important;
-  transition: all 0.6s linear !important
+.right {
+  display: inline-block;
+  float: right;
+}
+
+.left a {
+  color: #fff;
+}
+
+a.social {
+  text-decoration: none;
+}
+
+.social img {
+  height: 18px;
+  width: 18px
 }
 
 .footer {
+  margin-top: 50px;
+  background-color: #000;
+  padding: 15px;
+  color: #fff;
   text-align: center;
-  margin: 60px;
-  color: #555;
-  padding-top: 30px;
-  font-size: 18px;
-  letter-spacing: 1px;
-  box-sizing: border-box;
-  border-top: 1px solid #f2f2f2
+}
+
+.footer a {
+  color: #fff;
+  display: block;
+}
+
+.footer a.social {
+  display: inline-block;
+  margin: 0 10px;
 }
 
 .footer span {
   display: block;
-  width: 100%;
-  margin: 15px 0
 }
 
-.footer a {
-  color: #555;
-  text-decoration: none
+@media screen and (max-width: 968px) {
+  .gallery-wrapper {
+    column-count: 2;
+  }
 }
 
-.footer a:active,
-.footer a:hover,
-.footer a:focus,
-.footer a:visited {
-  color: #555;
-  text-decoration: none
+@media screen and (max-width: 600px) {
+  .gallery-wrapper {
+    column-count: 1;
+  }
 }
 
-.footer a.social img {
-  margin: 0 10px;
-  height: 30px;
-  width: 30px
-}

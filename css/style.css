@@ -302,6 +302,10 @@ a.social {
     overflow: hidden;
   }
 
+  .background-wrapper video {
+    margin-top: 0 !important;
+  }
+
   .intro {
     font-size: 12px !important;
     bottom: 60px !important;
@@ -309,6 +313,13 @@ a.social {
 
   .projects-wrapper .project {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .intro {
+    bottom: auto !important;
+    top: 120px !important;
   }
 }
 

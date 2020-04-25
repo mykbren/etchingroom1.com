@@ -100,14 +100,16 @@
   text-align: justify;
 }
 
-.projects-wrapper {
+.projects-wrapper,
+.shop {
   display: inline-block;
   width: 100%;
   min-height: 100%;
   height: auto;
 }
 
-.projects-wrapper .project {
+.projects-wrapper .project,
+.shop .item {
   position: relative;
   display: inline-block;
   width: 50%;
@@ -117,7 +119,8 @@
   padding: 20px;
 }
 
-.projects-wrapper .project img {
+.projects-wrapper .project img,
+.shop .item img {
   position: absolute;
   width: calc(100% - 40px);
   height: calc(100% - 40px);
@@ -128,7 +131,8 @@
   object-fit: cover;
 }
 
-.projects-wrapper .project h2 {
+.projects-wrapper .project h2,
+.shop .item h2 {
   font-size: 18px;
   position: absolute;
   text-transform: uppercase;
@@ -141,6 +145,22 @@
   left: 20px;
   padding: 15px 20px;
   box-sizing: border-box;
+}
+
+.shop .item .description {
+  position: relative;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.shop .item .description a {
+  float: right;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .single-project-wrapper {
@@ -313,6 +333,15 @@ a.social {
 
   .projects-wrapper .project {
     width: 100%;
+  }
+  .shop .item .description {
+    text-align: center;
+  }
+
+  .shop .item .description a {
+    text-align: center;
+    float: none;
+    display: block;
   }
 }
 

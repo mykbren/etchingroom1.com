@@ -1,117 +1,230 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>EtchingRoom1</title>
-    <link rel="stylesheet" media="all" href="css/style.css"/>
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"/>
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
-    <meta content="images/share.png" property="og:image"/>
-    <meta content="https://etchingroom1.com" property="og:url"/>
-    <meta content="EtchingRoom1" property="og:title"/>
-    <meta content="Etchingroom1 is a graphic studio created by two Ukraininan artists Kristina Yarosh and Anna Khodkova in 2015 in Kyiv, Ukraine." property="og:description"/>
+<html lang="uk">
 
-    <script src="vendor/jquery-2.1.0.min.js"></script>
-    <script src="vendor/jquery.swipebox.js"></script>
-    <link rel="stylesheet" href="vendor/swipebox.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EtchingRoom1 | Works</title>
+  <link rel="stylesheet" media="all" href="css/styles.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+  <meta content="images/share.png" property="og:image" />
+  <meta content="https://etchingroom1.com" property="og:url" />
+  <meta content="EtchingRoom1 | Works" property="og:title" />
+  <meta content="images/share.png" property="og:image" />
+  <meta
+    content="Etchingroom1 is a graphic studio created by two Ukraininan artists Kristina Yarosh and Anna Khodkova in 2015 in Kyiv, Ukraine."
+    property="og:description" />
 
-  </head>
+  <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" type="text/javascript"></script>
 
-  <body>
-    <div class="nav">
-      <div class="logo">
-        <a href="index.html">
-          <img src="images/logo1.png" alt="Logo" />
-        </a>
-      </div>
-      <div class="links">
-        <a href="cv.html">ABOUT</a>
-        <a href="projects.html">EXHIBITIONS</a>
-        <a href="works.html">WORKS</a>
-        <a href="shop.html">SHOP</a>
-      </div>
+  <!-- nanogallery2 -->
+  <link  href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+  <script  type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+</head>
+
+<body>
+  <nav>
+    <div class="home">
+      <a href="index.html">
+        <img src="images/white-head.png" class="logo" alt="Logo">
+        EtchingRoom1</a>
     </div>
+    <div class="menu">
+      <a href="about.html">About</a>
+      <a href="exhibitions.html">Exhibitions</a>
+      <a href="works.html" class="active">Works</a>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">
+      &#9776;
+    </div>
+  </nav>
 
-<div class="projects-wrapper">
+  <main>
+    <div class='gallery' id="works" data-nanogallery2='{"itemsBaseURL": "gallery/",
+        "thumbnailWidth": "320",
+        "thumbnailHeight": "auto",
+        "thumbnailBorderVertical": 0,
+        "thumbnailBorderHorizontal": 0,
+        "thumbnailLabel": {
+          "position": "overImageOnBottom",
+          "titleMultiLine": true
+        },
+        "thumbnailAlignment": "justified",
+        "thumbnailGutterWidth": 30,
+        "thumbnailGutterHeight": 30,
+        "thumbnailOpenImage": true
+        }'>
 
-  <div class="project">
-    <a href="works/2022.html">
-      <img src="images/2022/19.jpg" alt="2022">
-      <h2>2022</h2>
-    </a>
+      <!-- Mocaic / 2021 -->
+      <a href="" data-ngkind="album" data-ngid="1" data-ngthumb="m/01.jpg" description="bla">Mosaic / 2021</a>
+      <!-- Images for m directory -->
+      <a href="m/01.jpg" data-ngid="101" data-ngalbumid="1" data-ngthumb="m/01.jpg"></a>
+      <a href="m/3.jpg" data-ngid="102" data-ngalbumid="1" data-ngthumb="m/3.jpg"></a>
+      <a href="m/4.jpg" data-ngid="103" data-ngalbumid="1" data-ngthumb="m/4.jpg"></a>
+      <a href="m/5.jpg" data-ngid="104" data-ngalbumid="1" data-ngthumb="m/5.jpg"></a>
+      <a href="m/7.jpg" data-ngid="105" data-ngalbumid="1" data-ngthumb="m/7.jpg"></a>
+      <a href="m/8.jpg" data-ngid="106" data-ngalbumid="1" data-ngthumb="m/8.jpg"></a>
+      <a href="m/9.jpg" data-ngid="107" data-ngalbumid="1" data-ngthumb="m/9.jpg"></a>
+      <a href="m/10.jpg" data-ngid="108" data-ngalbumid="1" data-ngthumb="m/10.jpg"></a>
+      <a href="m/11.jpg" data-ngid="109" data-ngalbumid="1" data-ngthumb="m/11.jpg"></a>
+      <a href="m/14.jpg" data-ngid="110" data-ngalbumid="1" data-ngthumb="m/14.jpg"></a>
+
+
+      <!-- 2022 -->
+      <a href="" data-ngkind="album" data-ngid="2" data-ngthumb="2022/01.jpg">2022</a>
+      <!-- Images for 2022 directory -->
+      <a href="2022/01.jpg" data-ngid="200" data-ngalbumid="2" data-ngthumb="2022/01.jpg"></a>
+      <a href="2022/02.jpg" data-ngid="201" data-ngalbumid="2" data-ngthumb="2022/02.jpg"></a>
+      <a href="2022/03.jpg" data-ngid="202" data-ngalbumid="2" data-ngthumb="2022/03.jpg"></a>
+      <a href="2022/07.jpg" data-ngid="203" data-ngalbumid="2" data-ngthumb="2022/07.jpg"></a>
+      <a href="2022/09.jpg" data-ngid="204" data-ngalbumid="2" data-ngthumb="2022/09.jpg"></a>
+      <a href="2022/11.jpg" data-ngid="205" data-ngalbumid="2" data-ngthumb="2022/11.jpg"></a>
+      <a href="2022/12.jpg" data-ngid="206" data-ngalbumid="2" data-ngthumb="2022/12.jpg"></a>
+      <a href="2022/13.jpg" data-ngid="207" data-ngalbumid="2" data-ngthumb="2022/13.jpg"></a>
+      <a href="2022/14.jpg" data-ngid="208" data-ngalbumid="2" data-ngthumb="2022/14.jpg"></a>
+      <a href="2022/15.jpg" data-ngid="209" data-ngalbumid="2" data-ngthumb="2022/15.jpg"></a>
+      <a href="2022/16.jpg" data-ngid="210" data-ngalbumid="2" data-ngthumb="2022/16.jpg"></a>
+      <a href="2022/17.jpg" data-ngid="211" data-ngalbumid="2" data-ngthumb="2022/17.jpg"></a>
+      <a href="2022/18.jpg" data-ngid="212" data-ngalbumid="2" data-ngthumb="2022/18.jpg"></a>
+      <a href="2022/19.jpg" data-ngid="213" data-ngalbumid="2" data-ngthumb="2022/19.jpg"></a>
+      <a href="2022/20.jpg" data-ngid="214" data-ngalbumid="2" data-ngthumb="2022/20.jpg"></a>
+      <a href="2022/21.jpg" data-ngid="215" data-ngalbumid="2" data-ngthumb="2022/21.jpg"></a>
+      <a href="2022/22.jpg" data-ngid="216" data-ngalbumid="2" data-ngthumb="2022/22.jpg"></a>
+      <a href="2022/23.jpg" data-ngid="217" data-ngalbumid="2" data-ngthumb="2022/23.jpg"></a>
+      <a href="2022/24.jpg" data-ngid="218" data-ngalbumid="2" data-ngthumb="2022/24.jpg"></a>
+      <a href="2022/25.jpg" data-ngid="219" data-ngalbumid="2" data-ngthumb="2022/25.jpg"></a>
+
+      <!-- 2021 -->
+      <a href="" data-ngkind="album" data-ngid="3" data-ngthumb="2021/001.jpg">2021-2022</a>
+      <!-- Images for 2021 directory -->
+      <a href="2021/001.jpg" data-ngid="300" data-ngalbumid="3" data-ngthumb="2021/001.jpg"></a>
+      <a href="2021/002.jpg" data-ngid="301" data-ngalbumid="3" data-ngthumb="2021/002.jpg"></a>
+      <a href="2021/003.jpg" data-ngid="302" data-ngalbumid="3" data-ngthumb="2021/003.jpg"></a>
+      <a href="2021/004.jpg" data-ngid="303" data-ngalbumid="3" data-ngthumb="2021/004.jpg"></a>
+      <a href="2021/005.jpg" data-ngid="304" data-ngalbumid="3" data-ngthumb="2021/005.jpg"></a>
+      <a href="2021/007.jpg" data-ngid="305" data-ngalbumid="3" data-ngthumb="2021/007.jpg"></a>
+      <a href="2021/008.jpg" data-ngid="306" data-ngalbumid="3" data-ngthumb="2021/008.jpg"></a>
+      <a href="2021/009.jpg" data-ngid="307" data-ngalbumid="3" data-ngthumb="2021/009.jpg"></a>
+      <a href="2021/10.jpg" data-ngid="308" data-ngalbumid="3" data-ngthumb="2021/10.jpg"></a>
+      <a href="2021/11.jpg" data-ngid="309" data-ngalbumid="3" data-ngthumb="2021/11.jpg"></a>
+      <a href="2021/12.jpg" data-ngid="310" data-ngalbumid="3" data-ngthumb="2021/12.jpg"></a>
+
+      <!-- After the fire / 2021 -->
+      <a href="" data-ngkind="album" data-ngid="4" data-ngthumb="in/21.jpg">After the fire / 2021</a>
+      <!-- Images for in directory -->
+      <a href="in/21.jpg" data-ngid="401" data-ngalbumid="4" data-ngthumb="in/21.jpg"></a>
+      <a href="in/22.jpg" data-ngid="402" data-ngalbumid="4" data-ngthumb="in/22.jpg"></a>
+      <a href="in/23.jpg" data-ngid="403" data-ngalbumid="4" data-ngthumb="in/23.jpg"></a>
+      <a href="in/24.jpg" data-ngid="404" data-ngalbumid="4" data-ngthumb="in/24.jpg"></a>
+      <a href="in/25.jpg" data-ngid="405" data-ngalbumid="4" data-ngthumb="in/25.jpg"></a>
+      <a href="in/26.jpg" data-ngid="406" data-ngalbumid="4" data-ngthumb="in/26.jpg"></a>
+      <a href="in/27.jpg" data-ngid="407" data-ngalbumid="4" data-ngthumb="in/27.jpg"></a>
+      <a href="in/29.jpg" data-ngid="408" data-ngalbumid="4" data-ngthumb="in/29.jpg"></a>
+      <a href="in/30.jpg" data-ngid="409" data-ngalbumid="4" data-ngthumb="in/30.jpg"></a>
+      <a href="in/36.jpg" data-ngid="410" data-ngalbumid="4" data-ngthumb="in/36.jpg"></a>
+
+      <!-- Shops 2019/2020 -->
+      <a href="" data-ngkind="album" data-ngid="5" data-ngthumb="shops/01.jpg">Shops 2019/2020</a>
+      <!-- Images for shops directory -->
+      <a href="shops/01.jpg" data-ngid="501" data-ngalbumid="5" data-ngthumb="shops/01.jpg"></a>
+      <a href="shops/02.jpg" data-ngid="502" data-ngalbumid="5" data-ngthumb="shops/02.jpg"></a>
+      <a href="shops/2.jpg" data-ngid="503" data-ngalbumid="5" data-ngthumb="shops/2.jpg"></a>
+      <a href="shops/3.jpg" data-ngid="504" data-ngalbumid="5" data-ngthumb="shops/3.jpg"></a>
+      <a href="shops/4.jpg" data-ngid="505" data-ngalbumid="5" data-ngthumb="shops/4.jpg"></a>
+      <a href="shops/5.jpg" data-ngid="506" data-ngalbumid="5" data-ngthumb="shops/5.jpg"></a>
+      <a href="shops/6.jpg" data-ngid="507" data-ngalbumid="5" data-ngthumb="shops/6.jpg"></a>
+      <a href="shops/7.jpg" data-ngid="508" data-ngalbumid="5" data-ngthumb="shops/7.jpg"></a>
+
+      <!-- Sculptures 2019/2020 -->
+      <a href="" data-ngkind="album" data-ngid="6" data-ngthumb="s/1.JPG">Sculptures 2019/2020</a>
+      <!-- Images for s directory -->
+      <a href="s/1.JPG" data-ngid="601" data-ngalbumid="6" data-ngthumb="s/1.JPG"></a>
+      <a href="s/2.JPG" data-ngid="602" data-ngalbumid="6" data-ngthumb="s/2.JPG"></a>
+      <a href="s/3.JPG" data-ngid="603" data-ngalbumid="6" data-ngthumb="s/3.JPG"></a>
+      <a href="s/4.JPG" data-ngid="604" data-ngalbumid="6" data-ngthumb="s/4.JPG"></a>
+      <a href="s/5.JPG" data-ngid="605" data-ngalbumid="6" data-ngthumb="s/5.JPG"></a>
+      <a href="s/6.JPG" data-ngid="606" data-ngalbumid="6" data-ngthumb="s/6.JPG"></a>
+      <a href="s/7.JPG" data-ngid="607" data-ngalbumid="6" data-ngthumb="s/7.JPG"></a>
+
+      <!-- Caution, for no reason 2017/2018 -->
+      <a href="" data-ngkind="album" data-ngid="7" data-ngthumb="caution/01.jpg">Caution, for no reason 2017/2018</a>
+      <!-- Images for caution directory -->
+      <a href="caution/01.jpg" data-ngid="701" data-ngalbumid="7" data-ngthumb="caution/01.jpg"></a>
+      <a href="caution/02.jpg" data-ngid="702" data-ngalbumid="7" data-ngthumb="caution/02.jpg"></a>
+      <a href="caution/03.jpg" data-ngid="703" data-ngalbumid="7" data-ngthumb="caution/03.jpg"></a>
+      <a href="caution/04.jpg" data-ngid="704" data-ngalbumid="7" data-ngthumb="caution/04.jpg"></a>
+      <a href="caution/05.jpg" data-ngid="705" data-ngalbumid="7" data-ngthumb="caution/05.jpg"></a>
+      <a href="caution/06.jpg" data-ngid="706" data-ngalbumid="7" data-ngthumb="caution/06.jpg"></a>
+      <a href="caution/07.jpg" data-ngid="707" data-ngalbumid="7" data-ngthumb="caution/07.jpg"></a>
+      <a href="caution/08.jpg" data-ngid="708" data-ngalbumid="7" data-ngthumb="caution/08.jpg"></a>
+      <a href="caution/09.jpg" data-ngid="709" data-ngalbumid="7" data-ngthumb="caution/09.jpg"></a>
+      <a href="caution/10.jpg" data-ngid="710" data-ngalbumid="7" data-ngthumb="caution/10.jpg"></a>
+      <a href="caution/11.jpg" data-ngid="711" data-ngalbumid="7" data-ngthumb="caution/11.jpg"></a>
+      <a href="caution/12.jpg" data-ngid="712" data-ngalbumid="7" data-ngthumb="caution/12.jpg"></a>
+      <a href="caution/13.jpg" data-ngid="713" data-ngalbumid="7" data-ngthumb="caution/13.jpg"></a>
+      <a href="caution/14.jpg" data-ngid="714" data-ngalbumid="7" data-ngthumb="caution/14.jpg"></a>
+      <a href="caution/15.jpg" data-ngid="715" data-ngalbumid="7" data-ngthumb="caution/15.jpg"></a>
+      <a href="caution/16.jpg" data-ngid="716" data-ngalbumid="7" data-ngthumb="caution/16.jpg"></a>
+      <a href="caution/17.jpg" data-ngid="717" data-ngalbumid="7" data-ngthumb="caution/17.jpg"></a>
+
+      <!-- 2018 -->
+      <a href="" data-ngkind="album" data-ngid="8" data-ngthumb="2018/14.jpg">2018</a>
+
+      <!-- Images for 2018 directory -->
+      <a href="2018/14.jpg" data-ngid="801" data-ngalbumid="8" data-ngthumb="2018/14.jpg"></a>
+      <a href="2018/01.JPG" data-ngid="802" data-ngalbumid="8" data-ngthumb="2018/01.JPG"></a>
+      <a href="2018/03.jpg" data-ngid="803" data-ngalbumid="8" data-ngthumb="2018/03.jpg"></a>
+      <a href="2018/02.JPG" data-ngid="804" data-ngalbumid="8" data-ngthumb="2018/02.JPG"></a>
+      <a href="2018/12.jpg" data-ngid="805" data-ngalbumid="8" data-ngthumb="2018/12.jpg"></a>
+      <a href="2018/06.jpg" data-ngid="806" data-ngalbumid="8" data-ngthumb="2018/06.jpg"></a>
+      <a href="2018/13.JPG" data-ngid="807" data-ngalbumid="8" data-ngthumb="2018/13.JPG"></a>
+      <a href="2018/05.jpg" data-ngid="808" data-ngalbumid="8" data-ngthumb="2018/05.jpg"></a>
+      <a href="2018/11.jpg" data-ngid="809" data-ngalbumid="8" data-ngthumb="2018/11.jpg"></a>
+      <a href="2018/10.jpg" data-ngid="810" data-ngalbumid="8" data-ngthumb="2018/10.jpg"></a>
+      <a href="2018/04.jpg" data-ngid="811" data-ngalbumid="8" data-ngthumb="2018/04.jpg"></a>
+      <a href="2018/08.jpg" data-ngid="812" data-ngalbumid="8" data-ngthumb="2018/08.jpg"></a>
+      <a href="2018/18.jpg" data-ngid="813" data-ngalbumid="8" data-ngthumb="2018/18.jpg"></a>
+
+      <!-- 2017 -->
+      <a href="" data-ngkind="album" data-ngid="9" data-ngthumb="2017/01.jpg">2017</a>
+
+      <!-- Images for 2017 directory -->
+      <a href="2017/01.jpg" data-ngid="901" data-ngalbumid="9" data-ngthumb="2017/01.jpg"></a>
+      <a href="2017/03.jpg" data-ngid="902" data-ngalbumid="9" data-ngthumb="2017/03.jpg"></a>
+      <a href="2017/02.JPG" data-ngid="903" data-ngalbumid="9" data-ngthumb="2017/02.JPG"></a>
+      <a href="2017/06.jpg" data-ngid="904" data-ngalbumid="9" data-ngthumb="2017/06.jpg"></a>
+      <a href="2017/07.jpg" data-ngid="905" data-ngalbumid="9" data-ngthumb="2017/07.jpg"></a>
+      <a href="2017/05.jpg" data-ngid="906" data-ngalbumid="9" data-ngthumb="2017/05.jpg"></a>
+      <a href="2017/10.jpg" data-ngid="907" data-ngalbumid="9" data-ngthumb="2017/10.jpg"></a>
+      <a href="2017/04.jpg" data-ngid="908" data-ngalbumid="9" data-ngthumb="2017/04.jpg"></a>
+      <a href="2017/09.jpg" data-ngid="909" data-ngalbumid="9" data-ngthumb="2017/09.jpg"></a>
+      <a href="2017/08.jpg" data-ngid="910" data-ngalbumid="9" data-ngthumb="2017/08.jpg"></a>
+    </div>
   </div>
+  </main>
 
-  <div class="project">
-    <a href="works/2021.html">
-      <img src="images/2021/008.jpg" alt="2021">
-      <h2>2021-2022</h2>
-    </a>
-  </div>
-
-  <div class="project">
-    <a href="works/m.html">
-      <img src="images/m/01.jpg" alt="2021">
-      <h2>2021 mosaic</h2>
-    </a>
-  </div>
-
-  <div class="project">
-    <a href="works/in.html">
-      <img src="images/in/36.jpg" alt="2021">
-      <h2>2021 After the fire</h2>
-    </a>
-  </div>
-
-  <div class="project">
-    <a href="works/s.html">
-      <img src="images/s/3.JPG" alt="2020">
-      <h2>2019-2020 sculptures</h2>
-    </a>
-  </div>
-
-  <div class="project">
-    <a href="works/shops.html">
-      <img src="images/shops/3.jpg" alt="2020">
-      <h2>2019-2020 shops</h2>
-    </a>
-  </div>
-
-  <div class="project">
-    <a href="works/caution.html">
-      <img src="images/caution/01.jpg" alt="Caution, for no reason">
-      <h2>2017-2018 Caution, for no reason</h2>
-    </a>
-  </div>
-
-  <div class="project">
-    <a href="works/2018.html">
-      <img src="images/2018/06.jpg" alt="2018">
-      <h2>2018</h2>
-    </a>
-  </div>
-
-  <div class="project">
-    <a href="works/2017.html">
-      <img src="images/2017/04.jpg" alt="2017">
-      <h2>2017</h2>
-    </a>
-  </div>
-
-
-</div>
-
-    <div class="footer">
-      <span>
-        <a href="mailto:etching.room1@gmail.com">etching.room1@gmail.com</a>
-      </span>
-      <br>
-      <span>Kyiv, Ukraine</span>
-      <br>
+  <footer>
+    <span>Since 2016 | Kyiv, Ukraine</span>
+    <span>
+      <a href="mailto:etching.room1@gmail.com">etching.room1@gmail.com</a>
+    </span>
+    <span>
       <a target="_blank" class="social" href="https://www.facebook.com/EtchingRoom1">
         <img src="images/facebook.svg" alt="Facebook" />
       </a>
       <a target="_blank" class="social" href="https://www.instagram.com/etching.room1">
         <img src="images/instagram.svg" alt="Instagram" />
       </a>
-    </div>
-  </body>
+    </span>
+  </footer>
+  <div class="overlay"></div>
+  <div class="loader-wrapper">
+    <img class="loader-img" src="images/favicon.png" alt="Loader Image">
+  </div>
+
+<script src="js/javascript.js" type="text/javascript"></script>
+
+</body>
+
 </html>

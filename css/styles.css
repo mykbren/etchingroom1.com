@@ -195,3 +195,11 @@ img.logo {
     opacity: 0;
   }
 }
+
+.custom-description {
+  font-size: 22px;
+  margin: 0 auto;
+  max-width: 1268px;
+  padding: 40px 0;
+  text-align: center;
+}

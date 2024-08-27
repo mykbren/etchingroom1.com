@@ -210,23 +210,23 @@ img.logo {
 
 .description-overlay {
   background-color: rgba(0, 0, 0, 0.8);
+  bottom: 49px;
   color: #dac154;
   display: inline-block;
   font-size: 22px;
   font-weight: 700;
-  height: 40px;
   left: 0;
   line-height: 40px;
   margin-right: 10px;
   margin: auto;
+  min-height: 40px;
   position: fixed;
   right: 0;
   text-align: center;
   text-decoration: none;
   text-transform: lowercase;
-  top: 0;
   vertical-align: middle;
-  width: 70%;
+  width: 100%;
   z-index: 100000013;
 
   display: none;
@@ -238,4 +238,8 @@ img.logo {
 
 .small {
   font-size: 10px;
+}
+
+.nGY2viewerGallery {
+  background-color: rgba(0,0,0, 0.8) !important;
 }

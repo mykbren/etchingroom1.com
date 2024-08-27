@@ -45,6 +45,7 @@
   </nav>
 
   <main>
+    <div id="description-overlay" class="description-overlay"></div>
 
     <div class='gallery' id="exhibitions" data-nanogallery2='{"itemsBaseURL": "gallery/",
         "thumbnailWidth": "320",
@@ -53,7 +54,8 @@
         "thumbnailBorderHorizontal": 0,
         "thumbnailLabel": {
           "position": "overImageOnBottom",
-          "titleMultiLine": true
+          "titleMultiLine": true,
+          "displayDescription": true
         },
         "thumbnailAlignment": "justified",
         "thumbnailGutterWidth": 30,
@@ -67,7 +69,7 @@ This project presents our feelings about emptiness which you can feel with all y
 Artsvit Gallery, Dnipro, Ukraine">Bus station / 2023</a>
 
       <!-- Images for bus directory -->
-      <a href="bus/01.jpg" data-ngid="100" data-ngalbumid="1" data-ngthumb="bus/01.jpg"></a>
+      <a href="bus/01.jpg" data-ngid="100" data-ngalbumid="1" data-ngthumb="bus/01.jpg" data-ngdesc="вхід"></a>
       <a href="bus/02.jpg" data-ngid="101" data-ngalbumid="1" data-ngthumb="bus/02.jpg"></a>
       <a href="bus/03.jpg" data-ngid="102" data-ngalbumid="1" data-ngthumb="bus/03.jpg"></a>
       <a href="bus/04.jpg" data-ngid="103" data-ngalbumid="1" data-ngthumb="bus/04.jpg"></a>
@@ -90,7 +92,7 @@ Artsvit Gallery, Dnipro, Ukraine">Bus station / 2023</a>
       <!-- It was crowded yesterday / 2022 -->
       <a href="" data-ngkind="album" data-ngid="2" data-ngthumb="itwas/001.jpg" data-ngdesc="The works are inhabited by a permanent dialogue between past, present and future. Etchingroom1 plays on paradoxes and anachronisms by representing ultra-modern or futuristic engines (submarines, flying saucers) through etching, a technique dating back to the Middle Ages and otherwise neglected by recent artistic trends. This relationship to the past is highlighted through the expression of the Ukrainian collective culture and imagination, both strongly impregnated by the imminence of war and by a relentless quest for identity. But Anna and Kristina go far beyond referring to the history of their country, they reappropriate it by giving it a dimension that is not only aesthetic, but also more universal, addressed to all spectators of their art. ©ArtEast Gallery">It was crowded yesterday / 2022</a>
       <!-- Images for itwas directory -->
-      <a href="itwas/001.jpg" data-ngid="200" data-ngalbumid="2" data-ngthumb="itwas/001.jpg"></a>
+      <a href="itwas/001.jpg" data-ngid="200" data-ngalbumid="2" data-ngthumb="itwas/001.jpg"
       <a href="itwas/02.jpg" data-ngid="201" data-ngalbumid="2" data-ngthumb="itwas/02.jpg"></a>
       <a href="itwas/03.jpg" data-ngid="202" data-ngalbumid="2" data-ngthumb="itwas/03.jpg"></a>
       <a href="itwas/04.jpg" data-ngid="203" data-ngalbumid="2" data-ngthumb="itwas/04.jpg"></a>
@@ -230,6 +232,9 @@ Reflections on the mental state, subconscious limitations and cultural stereotyp
       <a target="_blank" class="social" href="https://www.instagram.com/etching.room1">
         <img src="images/instagram.svg" alt="Instagram" />
       </a>
+    </span>
+    <span class="small">
+      developed by <strong><a href="https://tseivo.com/b/n1ckbren">mykyta</a></strong>
     </span>
   </footer>
   <div class="overlay"></div>

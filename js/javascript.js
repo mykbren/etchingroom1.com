@@ -39,3 +39,31 @@ function hideLoader() {
     overlay.remove();
   });
 }
+
+$(".gallery").on("lightboxImageDisplayed.nanogallery2", function () {
+  var description = $('.description').text(); // Get the description text
+  $('#description-overlay').text(description).show(); // Display it in the overlay
+});
+
+
+// Event for closing the lightbox
+$(".gallery").on("lightboxClosed.nanogallery2", function() {
+  $('#description-overlay').hide(); // Hide overlay when lightbox is closed
+});
+
+// Optionally, handle closing the gallery or lightbox from outside
+$(document).on('click', function(event) {
+  if ($(event.target).closest('.nGY2Viewer').length === 0) {
+    $('#description-overlay').hide(); // Hide overlay if clicking outside the lightbox
+  }
+});
+
+$(document).on('keydown', function(event) {
+  if (event.key === 'Escape') {
+    $('#description-overlay').hide(); // Hide overlay when Esc key is pressed
+  }
+});
+
+$(".gallery").on("galleryLayoutApplied.nanogallery2", function() {
+  $('#description-overlay').hide(); // Hide overlay when lightbox is closed
+});

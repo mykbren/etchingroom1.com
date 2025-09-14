@@ -243,3 +243,153 @@ img.logo {
 .nGY2viewerGallery {
   background-color: rgba(0,0,0, 0.8) !important;
 }
+
+/* News section styles */
+.news-item {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+}
+
+.news-item:last-child {
+  border-bottom: none;
+}
+
+.news-header {
+  margin-bottom: 15px;
+}
+
+.news-header h2 {
+  margin: 0 0 10px 0;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.news-header h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.news-header h2 a:hover {
+  text-decoration: underline;
+}
+
+.news-date {
+  color: #666;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.news-excerpt p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.read-more {
+  color: #dac154;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.news-placeholder {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.news-placeholder p {
+  color: #666;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Individual news post styles */
+.breadcrumb {
+  margin-bottom: 30px;
+}
+
+.breadcrumb a {
+  color: #dac154;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.news-post-header {
+  border-bottom: 2px solid #dac154;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+
+.news-post-header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 15px 0;
+}
+
+.news-content {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.news-content h2 {
+  color: #333;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 35px 0 20px 0;
+}
+
+.news-content p {
+  margin-bottom: 20px;
+}
+
+.news-content ul {
+  margin: 20px 0;
+  padding-left: 25px;
+}
+
+.news-content li {
+  margin-bottom: 10px;
+}
+
+.news-content strong {
+  color: #333;
+  font-weight: 700;
+}
+
+.news-content em {
+  font-style: italic;
+}
+
+/* Responsive design for news */
+@media (max-width: 768px) {
+  .news-header h2 {
+    font-size: 24px;
+  }
+  
+  .news-post-header h1 {
+    font-size: 28px;
+  }
+  
+  .news-content h2 {
+    font-size: 20px;
+  }
+  
+  .cv {
+    padding: 20px;
+  }
+}
